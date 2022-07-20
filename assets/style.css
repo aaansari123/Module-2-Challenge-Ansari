@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
   }
+  /* format header*/
   header {
     padding: 1px;
     text-align: left;
@@ -8,19 +9,20 @@
     color: darkgray;
     text-align: center;
   }
-
+  /* create a horizontal line*/
   hr{
     height: 3px;
     background-color:rgb(147, 158, 204);
     opcaity: 0.5;
   }
+    /*format nav bar*/
   nav {
     display: flex;
     text-align: center;
     background-color: darkgray;
 
   }
-
+  /*format list in nav bar*/
   nav a{
     list-style: none;
     text-align: center;
@@ -31,19 +33,19 @@
     font-weight: bold;
   }
 
-
+  /*format subtitle section*/
 .subtitle{
     text-align: center;
     background-image: url(./images/laptop.png);
     padding: 10px;
     color: skyblue;
 }
-
+  /*give main flex property*/
 main {
     display: flex;
     flex-wrap: wrap;
   }
-
+  /*Should create sidebar, cant get it to work*/
   .sidebar1 {
     flex: 1;
     padding: 20px;
@@ -59,41 +61,19 @@ main {
     text-align: center;
     order: 0;
   }
-
+  /*style the about me section*/
 .About{
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(30, 119, 155);
 }
+  /* give the images the correct sizing. Cant seem to make them smaller, but they do fill out rows and columns responsively.*/
 .workImages {
 
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
   }
-
-  img{
-    opacity: 80%;
-  }
-
-  img:hover{
-    opacity: 100%;
-  }
-
-
-  footer{
-    text-align: center;
-    text-decoration: underline;
-    color: lightblue;
-  }
-  footer > ul{
-    color: black;
-    list-style: none;
-    text-decoration: underline;
-    text-align: center;
-    line-height: 1.5;
-  }
- 
   .project {
     border-style: solid;
     border-width: 1px;
@@ -110,6 +90,30 @@ main {
   img {
     width: 100%;
   }
+    /*Creating the hover image effect*/
+  img{
+    opacity: 80%;
+  }
+
+  img:hover{
+    opacity: 100%;
+  }
+
+  /*Footer styling */
+  footer{
+    text-align: center;
+    text-decoration: underline;
+    color: lightblue;
+  }
+  footer > ul{
+    color: black;
+    list-style: none;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 1.5;
+  }
+ 
+ 
   @media screen and (max-width: 992px) {
     aside {
         text-align: center;
