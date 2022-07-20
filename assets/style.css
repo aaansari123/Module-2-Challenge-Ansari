@@ -44,18 +44,26 @@ main {
     flex-wrap: wrap;
   }
 
-  aside {
+  .sidebar1 {
     flex: 1;
     padding: 20px;
+  }
+
+  .sidebar2 {
+    flex: 1;
+    padding: 20px;
+  }
+
+  aside {
+    flex: 1;
+    text-align: center;
+    order: 0;
   }
 
 .About{
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(30, 119, 155);
-}
-.Work{
-    padding-bottom: 10px;
 }
 .workImages {
 
@@ -103,14 +111,22 @@ main {
     width: 100%;
   }
   @media screen and (max-width: 992px) {
+    aside {
+        text-align: center;
+        order: 0;
+      }
   }
 
   @media screen and (max-width: 768px) {
+    aside {
+        text-align: center;
+        order: 0;
+      }
     .test{
         width: 100%;
     }
     .project {
       width: 100%;
     }
-  
+}
 
