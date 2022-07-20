@@ -5,29 +5,38 @@
     <title>Asad Ansari Portfolio!</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
   </head>
   <!-- Create body with nav bar, sub header, main section with a sidebar, and a footer that holds contact links-->
   <body>
       <!-- Nav Bar with name and links to key parts of page-->
     <header>
         <h1>Ansari</h1>
-        <ul>
-            <li> <a href = "#About" >About Me</a></li>
-            <li> <a href = "#" >Work</a></li>
-            <li> <a href = "#Contact" >Contact Me</a></li>
-            <li> <a href = "#" >Resume</a></li>
-        </ul>
+        
         
     </header>
+    <nav class = "nav">
+       <a href = "#About" >About Me</a></li>
+       <a href = "#" >Work</a></li>
+       <a href = "#Contact" >Contact Me</a></li>
+       <a href = "#" >Resume</a></li>
+    </nav>
+
+    <section class = "subtitle">
+      <h2>Cool Subtitle Here</h2>
+    </section>
 
       <!-- main will hold an about me section, a work section with 5 images linking to five works, and sidebar. Should be setup to be responsive-->
     <main>
           <!-- About me Section-->
-        <section clas = "About">
+        <aside class = "sidebar1">
+          <h2>About Me</h2>
+          <hr>
+        </aside>
 
-            <h1>About Me</h1>
+        <section class = "About">
+
+          <hr>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero incidunt asperiores voluptatibus ex explicabo debitis excepturi rem quis nemo aspernatur deserunt alias aliquam tempora eos, eligendi error, beatae obcaecati!</p>
 
@@ -37,29 +46,43 @@
 
           <section class = "Work">
 
-            <h2>Work</h2>
+            <aside class = "sidebar2">
+              <h2>Work</h2>
+              <hr>
+            </aside>
 
           </section>
         <!--Place images with links to projects-->
-          <section class = "project one">
-            <img src="./assets/images/mountains.png" alt="Black and White Mountain Range" />
+      <section class = "workImages">
+          <section class = "project big">
+            <h3>Project1</h3>
+            <img id = "img1" src="./assets/images/mountains.png" alt="Black and White Mountain Range" />
           </section>
 
-          <section class = "project two">
-
-          </section>
-
-          <section class = "project three">
-
-          </section>
-
-          <section class = "project four">
+          <section class = "project">
+            <h3>Project2</h3>
+            <img src="./assets/images/laptop.png" alt="half closed laptop surrounded by red light" />
 
           </section>
 
-          <section class = "project five">
+          <section class = "project">
+            <h3>Project3</h3>
+            <img src="./assets/images/phones.png" alt="mosaic compilation of iphone backs, of various colors" />
 
           </section>
+
+          <section class = "project">
+            <h3>Project4</h3>
+            <img src="./assets/images/robot.png" alt="Small robot alone" />
+
+          </section>
+
+          <section class = "project">
+            <h3>Project5</h3>
+            <img src="./assets/images/slimbook.png" alt="small white laptop" />
+
+          </section>
+        </section>
           
     </main>
 
@@ -67,6 +90,7 @@
     <footer id = "Contact">
 
         <h2>Contact Me</h2>
+        <hr>
         <ul>
             <li>555-555-5555</li>
             <li><a href = "#">asadali1029@gmail.com</a></li> <!--lookup how to link email again, did it in an activity!!!-->
